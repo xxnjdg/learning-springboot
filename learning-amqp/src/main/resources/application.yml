@@ -1,0 +1,10 @@
+spring:
+  rabbitmq:
+    host: 192.168.100.70 # 主机名 集群vip也可以配这
+    publisher-confirm-type: correlated # confirm 机制
+    publisher-returns: true # return 机制
+    template:
+      mandatory: true  # broker 路由不到，不会删除标志
+    listener:
+      simple:
+        prefetch: 1 # 限流，允许接受未确认的消息数，默认250

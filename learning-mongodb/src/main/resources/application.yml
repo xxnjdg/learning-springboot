@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      database: mydb
+      uri: mongodb://192.168.100.33:27017

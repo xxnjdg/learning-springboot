@@ -1,0 +1,1 @@
+BSON是一种二进制序列化格式，用于在MongoDB中存储文档和进行远程过程调用。BSON规范位于bsonspec.org。
